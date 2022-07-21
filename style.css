@@ -1,0 +1,88 @@
+body {
+  background: url('./assets/black-linen.png'), linear-gradient(to right, rgba(204, 159, 255, 0.452), rgba(129, 198, 255, 0.438));
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto 5rem;
+  background-color:rgba(101, 181, 255, 0.589);
+  box-shadow: 0px 0px 38px 6px rgba(66, 68, 90, 1);
+}
+
+h1 {
+    font-size: 5rem;
+    background-color: rgba(255, 255, 255, 0.658);
+    box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
+    padding: 0 7rem;    
+}
+
+button {
+  transition: all 500ms;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button, #userinput, .todo-list, h1, .app {
+  border-radius: 1rem;
+}
+
+p, #userinput, #enter, #clear {
+  font-size: 1.5rem;
+}
+
+#userinput, #enter, #clear {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.todo-list {
+  box-shadow: 0px 0px 10px 3px rgba(66, 68, 90, 1);
+  margin: 2rem 2rem;
+  padding: 0 10rem;
+  background-color: rgba(255, 255, 255, 0.658);
+}
+
+li {
+  display: grid;
+  grid-template-columns: 65% 5rem;
+  gap: 2rem;
+  margin-top: 25px;
+
+}
+
+li span {
+  display: list-item;
+  list-style: decimal;
+  font-size: 2rem;
+  max-width: 30ch;
+  word-wrap: break-word;  
+}
+
+@media screen and (max-width: 600px) {
+  .todo-list {
+    padding: 0 0;
+  }
+
+  #userinput, #enter, #clear {
+    font-size: 1rem;
+  }
+  
+  li span {
+    font-size: 1.5rem;
+  }
+}
